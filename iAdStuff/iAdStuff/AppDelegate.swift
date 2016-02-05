@@ -6,16 +6,18 @@
 //  Copyright © 2016 jhampac. All rights reserved.
 //
 
+import iAd
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var bannerView: ADBannerView?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        bannerView = ADBannerView(adType: .Banner)
         return true
     }
 
